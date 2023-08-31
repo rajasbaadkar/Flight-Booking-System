@@ -1,0 +1,7 @@
+,flight_number,source,destination,time_of_flight,available_seats,available_economy_seats,available_business_seats,economy_price,business_price,airline
+0,RTIttf,Chennai,Bangalore,2021-09-06 21:00:00,364,183,181,12751,162528,British Airways
+1,oo5TsY,Pune,Mumbai,2021-09-06 15:00:00,302,152,150,15328,141493,Jet Airways
+2,0CR3gZ,Mumbai,New Delhi,2021-09-06 09:00:00,311,156,155,15328,141493,Jet Airways
+3,bsEmZ5,Bangalore,Pune,2021-09-06 18:00:00,386,194,192,10241,169180,Air India
+4,ttlzsZ,Pune,Chennai,2021-09-06 12:00:00,298,150,148,12751,162528,British Airways
+5,rHic8s,Chennai,Kolkata,2021-09-06 12:00:00,369,185,184,10241,169180,Air India
