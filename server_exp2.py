@@ -88,11 +88,11 @@ airlines = [
 ]
 cities = ["Mumbai", "Pune", "New Delhi", "Bangalore", "Chennai", "Kolkata"]
 times = [
-    datetime.strptime("13 Sep 2022", "%d %b %Y").replace(hour=9, minute=00),
-    datetime.strptime("13 Sep 2022", "%d %b %Y").replace(hour=12, minute=00),
-    datetime.strptime("13 Sep 2022", "%d %b %Y").replace(hour=15, minute=00),
-    datetime.strptime("13 Sep 2022", "%d %b %Y").replace(hour=18, minute=00),
-    datetime.strptime("13 Sep 2022", "%d %b %Y").replace(hour=21, minute=00),
+    datetime.strptime("13 Sep 2023", "%d %b %Y").replace(hour=9, minute=00),
+    datetime.strptime("15 Sep 2023", "%d %b %Y").replace(hour=12, minute=00),
+    datetime.strptime("16 Nov 2023", "%d %b %Y").replace(hour=15, minute=00),
+    datetime.strptime("13 Oct 2023", "%d %b %Y").replace(hour=18, minute=00),
+    datetime.strptime("28 Sep 2023", "%d %b %Y").replace(hour=21, minute=00),
 ]
 
 flights = []  # list of randomly generated flights
