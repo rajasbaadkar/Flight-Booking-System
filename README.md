@@ -1,5 +1,5 @@
 # flight-booking-system
-A flight booking system built in python for distributed computing in computer engineering.
+This repository implements a flight booking system using various concepts of Distributed Computing such as load balancing, clock synchronization etc.
 
 # Install Dependencies
 pip install termcolor PrettyTable colored
