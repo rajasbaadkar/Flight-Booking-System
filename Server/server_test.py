@@ -1,6 +1,6 @@
 import socket
 import threading
-import json
+import os
 import string
 import random
 from datetime import datetime
@@ -171,18 +171,12 @@ def handle_client(client_socket):
     print(f"Thread {client_thread_id} handling a client connection")
     while True:
         request = client_socket.recv(1024).decode()
-        params = json.loads(request)
-        if params["type"] == 'menu':
+        if request == 'menu':
             menu = view_flights()
             client_socket.send(menu.encode())
-        elif params["type"] == "book":
-            cost = bookFlight(params["id"], params["class"])
-            client_socket.send(str(cost).encode())
-        elif params["type"] == "exit":
-            client_socket.send("Goodbye!".encode())
-            break
         else:
-            print("Invalid".encode())
+            print("Invalid")
+            break
     print("Connection ended")
     client_socket.close()
 
@@ -190,7 +184,7 @@ def handle_client(client_socket):
 # Initialize the server
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.bind(('localhost', 8888))
-server.listen(5)
+server.listen(10)
 
 while True:
     print("Server listening....")
